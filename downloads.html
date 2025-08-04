@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Nemilova</title>
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <script type="module" src="./scripts/button-burger.js"></script>
+    <script type="module" src="./scripts/accordeon.js"></script>
+    <script type="module" src="./scripts/pop-up.js"></script>
+    <script type="module" src="./scripts/button-up.js"></script>
+</head>
+<body>
+    <header class="header container">
+        <a href="/" class="header__logo">
+            <img src="./assets/icons/logo_mobile.svg" alt="logo">
+        </a>
+
+        <div class="header__language">
+            <a href="downloads.html">Ru</a>/
+            <a href="downloads_it.html">It</a>
+        </div>
+
+        <button id="button-burger" type="button" class="header__button-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="nav-menu" class="nav-menu header__nav-menu">
+            <a href="./index.html#about-me">Обо мне</a>
+            <a href="./index.html#education">Образование и квалификация</a>
+            <a href="#">Полезные ресурсы</a>
+            <a href="./index.html#areas-of-work">Сферы работы</a>
+            <a href="./index.html#interaction-formats">Услуги</a>
+            <a href="./index.html#contacts">Контакты</a>
+        </nav>
+        <a href="#" class="button-up" id="button-up"></a>
+    </header>
+    
+    <main class="main-downloads">
+        <section class="downloads-intro container container-not-padding-x">
+            <h1 class="downloads-intro__h1">Полезные ресурсы</h1>
+            <p>
+                Здесь Вы можете скачать официальные документы, тесты, упражнения. 
+                Обратите внимание на то, что вся документация — на итальянском языке
+            </p>
+            <p>
+                В ходе работы у меня будет возможность предоставить 
+                Вам нужные документы на русском языке
+            </p>
+            <span class="downloads-intro__arrow"></span>
+        </section>
+        <section class="documents container">
+            <ul>
+                <li>
+                    <h2 class="documents__h2">
+                        Prima della visita
+                    </h2>
+                    <p>
+                        Перед первой встречей вы можете ознакомиться 
+                        с контрактом, информационным соглашением, формой 
+                        для сбора данных. Нет необходимости заполнять 
+                        эти документы!
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1cRYPcp2I3Lpdvt4TdZrYMCXH8rz1m6Ch" target="_blank">Посмотреть</a>
+                </li>
+                <li>
+                    <h2 class="documents__h2">
+                        Questionari
+                    </h2>
+                    <p>
+                        Все предоставленные опросники адаптированы для самотестирования
+                        и являются самодиагностикой, признанной научным сообществом. 
+                        Никакой из результатов не является точным и достаточным для 
+                        постановки диагноза
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/13CfCvH0VY5cDk_E2HjXhPRNTOnzWXtON" target="_blank">Посмотреть</a>
+                </li>
+                <li>
+                    <h2 class="documents__h2">
+                        Esercizi
+                    </h2>
+                    <p>
+                        Предложенные упражнения выбраны
+                        из подхода когнитивно-поведенческой терапии и 
+                        представляют из себя конкретные и эффективные 
+                        инструменты для анализа и модификации поведения.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1wA8HPIZwKV5aplBKfA7mZv0PmeYy9XoM"" target="_blank">Посмотреть</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contacts" class="footer container container-not-padding-x">
+        <div class="footer__title">
+            <h2 class="footer__h2 _anim-items">ПСИХОЛОГ В РИМЕ</h2>
+            <h3 class="footer__h3 _anim-items">Елена Немилова</h3>
+            <span>Эксперт когнитивных процессов</span>
+            <span>Сексолог<span class="pop-up" data-popup="Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025"></span></span>
+        </div>
+        <div class="footer__messangers">
+            <a href="https://t.me/psicologia_ru" class="footer__telegram" target="_blank">telegram </a>
+            <a href="https://www.facebook.com/elenemi" class="footer__facebook" target="_blank">facebook</a>
+            <a href="https://it.linkedin.com/in/elena-nemilova-91399b25" class="footer__linked-in" target="_blank">linked in</a>
+        </div>
+        <div class="footer__address">
+            <a href="tel:+">+39 351 951 1810</a>
+            <a href="mailto:elena.nemilova@gmail.com">elena.nemilova@gmail.com</a>
+            <a href="#">Via Mondragone, 12 Roma</a>
+        </div>
+        <div class="footer__politics">
+            <a href="./confidentiality_ru.html" target="_blank">Политика конфиденциальности</a>
+            <a href="#">Разработка сайта @elena_lotorevich</a>
+        </div>
+    </footer>
+</body>
+</html>

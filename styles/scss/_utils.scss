@@ -1,0 +1,37 @@
+@use 'helpers' as *;
+
+.container {
+    width: 100%;
+    max-width: 959px;
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.container-not-padding-x {
+    padding-inline: 0;
+}
+
+@media (min-width: 960px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@keyframes scroll-appear {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      scale: 1;
+    }
+}
+  
+._anim-items {
+  animation: scroll-appear linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}

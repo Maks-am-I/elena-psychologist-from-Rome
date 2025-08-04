@@ -1,0 +1,100 @@
+@use './../helpers/' as *;
+
+.education {
+    padding-top: rem(90);
+    padding-bottom: rem(25);
+
+    & h2 {
+        @include anim;
+        margin-block: 0;
+        font-size: rem(21);
+
+        &::after {
+            bottom: rem(-8);
+        }
+    }
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+        font-size: rem(18);
+        font-weight: 300;
+        line-height: 1.2;
+        
+        & li {
+            padding-left: rem(39);
+            padding-block: rem(28);
+            width: 100%;
+
+            &:nth-child(3) {
+                font-weight: 400;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1.5px solid var(--color-black);
+            }
+
+            position: relative;
+            &::before {
+                position: absolute;
+                content: attr(data-number);
+                left: 0;
+                font-weight: 400;
+                font-size: rem(16);
+            }
+
+            & span {
+                z-index: 5;
+                height: auto;
+                min-width: rem(271);
+                position: absolute;
+                left: 1vw;
+                top: -132%;
+                opacity: 0;
+                visibility: hidden;
+                transition-duration: .2s;
+            }
+
+            &:hover span {
+                visibility: visible;
+                opacity: 1;
+                transition-duration: .2s;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .education {
+        padding-top: rem(128);
+
+        & h2 {
+            font-size: rem(30);
+            margin-left: rem(37);
+        }
+
+        & ul {
+            padding-left: rem(12);
+            margin-top: rem(42);
+            font-size: rem(22);
+            line-height: 1.27;
+
+            & li {
+                padding-block: rem(42);
+                padding-right: rem(164);
+
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: rem(66);
+                    right: rem(9);
+                    width: rem(90);
+                    height: rem(10);
+                    background-image: url('./../../../assets/icons/arrow-rigth-long.svg');
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

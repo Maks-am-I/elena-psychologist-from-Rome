@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Nemilova</title>
+
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <script type="module" src="./scripts/button-burger.js"></script>
+    <script type="module" src="./scripts/accordeon.js"></script>
+    <script type="module" src="./scripts/button-up.js"></script>
+</head>
+<body>
+    <header class="header container">
+        <a href="/" class="header__logo">
+            <img src="./assets/icons/logo_mobile.svg" alt="logo">
+        </a>
+
+        <div class="header__language">
+            <a href="index.html">Ru</a>/
+            <a href="index_it.html">It</a>
+        </div>
+
+        <button id="button-burger" type="button" class="header__button-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="nav-menu" class="nav-menu header__nav-menu">
+            <a href="#about-me">Обо мне</a>
+            <a href="#education">Образование и квалификация</a>
+            <a href="./downloads.html">Полезные ресурсы</a>
+            <a href="#areas-of-work">Сферы работы</a>
+            <a href="#interaction-formats">Услуги</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#" class="button-up" id="button-up"></a>
+    </header>
+    <main id="main" class="main">
+        <section class="intro container">
+            <div class="intro__title _anim-items">
+                <h2 class="h2">психолог в риме</h2>
+                <h1 class="h1">елена немилова</h1>
+                <span>Эксперт когнитивных процессов</span><br>
+                <span>Сексолог<span class="pop-up" data-popup="Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025"></span></span>
+            </div>
+            <div class="intro__main-photo _anim-items">
+                <img src="./assets/img/main-photo_mobile.png" alt="photo Elena Nemilova">
+            </div>
+            <div class="intro__title-2 _anim-items">
+                <p>Помогаю найти равновесие быстро и эффективно</p>
+                <a href="#forms">Записаться</a>
+            </div>
+
+            <div class="intro__achievements _anim-items">
+                <ul>
+                    <li><p><strong>Двойная</strong> академическая премия</p></li>
+                    <li><p>Аккредитация <strong>в Италии</strong> №22245</p></li>
+                    <li><p>Член Ассоциации <strong>ARPEC</strong></p></li>
+                    <li><p><strong>Главный</strong> психолог социального проекта “Infogiovani”</p></li>
+                    <li><p>Научный консультант при частных и государственных <strong>школах Рима</strong></p></li>
+                    <li><p><strong>Эксперт</strong> в области проблематичного <strong>развития</strong>, сложностей <strong>в обучении</strong> и образовательных технологий</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about-me" class="about-me container">
+            <h2 class="h2 _anim-items">Обо мне</h2>
+            <div class="about-me__wrapper">
+                <div class="about-me__list-me _anim-items">
+                <h3>Елена Немилова</h3>
+                    <ul>
+                        <li data-number="[1]">
+                            аккредитованный
+                            и премированный
+                            психолог
+                        </li>
+                        <li data-number="[2]">
+                            эксперт когнитивных процессов
+                        </li>
+                        <li data-number="[3]">
+                            сексолог <span class="pop-up" data-popup="Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-me__photo _anim-items">
+                    <img src="./assets/img/about-me__photo.png" alt="sexologist">
+                    <p>
+                        «Люблю науку и стремлюсь
+                        систематизировать знания как для себя,
+                        так и для своих собеседников. Обладаю
+                        способностью ясноти доступно
+                        объяснять сложные  концепции. В работе 
+                        внимательна, тактична и открыта»
+                    </p>
+                </div>
+                <div class="about-me__experience _anim-items">
+                    <div>
+                        <ul>
+                            <li>
+                                <span>16+</span>
+                                <p>лет опыта работы</p>
+                            </li>
+                            <li>
+                                <span>150+</span>
+                                <p>часов личной терапии</p>
+                            </li>
+                            <li>
+                                <span>200+</span>
+                                <p>часов супервизии</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Записана в Реестр Психологов Лацио под номером
+                        22245 (Ordine degli psicologi del Lazio) и в
+                        Национальный Реестр Психологов (Ordine Nazionale
+                        degli Psicologi)<br>
+                        <br>
+                        <span>Прохожу постоянное <strong>повышение </strong>квалификации (ECM)</span> 
+                    </p>
+                </div>
+                <div class="about-me__myself _anim-items">
+                    <p>
+                        Веду образовательные проекты, просветительскую и 
+                        научно-практическую работу, целью которой является 
+                        <b>практическое применение знаний о психологии
+                        и деятельности мозга в вопросах эмоционального 
+                        благополучия человека</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education container">
+            <h2 class="_anim-items">Образование и квалификация</h2>
+            <ul>
+                <li data-number="[1]" data-education="">
+                    2025 - Университетский Мастер І уровня "Sessuologia 
+                    Clinica", Università degli Studi di Milano - Bicocca 
+                    (Университет Бикокка, Милан")
+                </li>
+                <li data-number="[2]">
+                    2013 - Университетский Мастер II уровня “UX Research”, La
+                    Sapienza, Roma (Университет Ла Сапиенца, Рим)
+                    <span><img src="./assets/img/education-2013.png" alt="2013 - Университетский Мастер II уровня “UX Research”, La Sapienza, Roma (Университет Ла Сапиенца, Рим)"></span>
+                </li>
+                <li data-number="[3]">
+                    2011 - Премированный психолог высшей категории, 
+                    красный диплом "Licenza in Psicologia", UPS, 
+                    Roma (Салезианский университет, Рим)
+                    <span><img src="./assets/img/education-2011.png" alt='2011 - Премированный психолог высшей категории, красный диплом "Licenza in Psicologia", UPS, Roma (Салезианский университет, Рим)'></span>
+                </li>
+                <li data-number="[4]">
+                    2009 - Психолог, красный диплом "Baccalaureato 
+                    in Psicologia", UPS, Roma (Салезианский университет, Рим)
+                    <span><img src="./assets/img/education-2009.png" alt='2009 - Психолог, красный диплом "Baccalaureato in Psicologia", UPS, Roma (Салезианский университет, Рим)'></span>
+                </li>
+                <li data-number="[5]">
+                    2003 СПбГТИ "Инженер по оптимизации систем автоматизированного 
+                    проектирования, СПоти (ТУ),
+                    Санкт-Петербург
+                    <span><img src="./assets/img/education-2003.png" alt='2003 СПбГТИ "Инженер по оптимизации систем автоматизированного проектирования, СПоти (ТУ), Санкт-Петербург'></span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="areas-of-work" class="areas-of-my-work container">
+            <h2 class="_anim-items">Сферы моей работы</h2>
+            <p class="areas-of-my-work__phrase-top">
+                “Самодиагностика может быть 
+                неточной, поэтому поручите анализ Вашей ситуации мне”
+            </p>
+            <div class="areas-of-my-work__list-1">
+                <h3 class="_anim-items">Консультирование</h3>
+                <ul>
+                    <li>в сферах личностного роста</li>
+                    <li>преодоления кризисов</li>
+                    <li>принятия решений</li>
+                    <li>профориентации</li>
+                    <li>новых зависимостей</li>
+                </ul>
+            </div>
+            
+            <div class="areas-of-my-work__list-2">
+                <h3 class="_anim-items">Психологическая поддержка</h3>
+                <ul>
+                    <li>причины тяжелых состояний (обид, депрессий, апатии, прокрастинации)</li>
+                    <li>помогаю комфортно прожить адаптацию в новой стране</li>
+                    <li>понять глубинный внутренний мир</li>
+                    <li>понять суть явлений и найти дорогу к абсолютной ясности</li>
+                    <li>помогаю ощутить легкость и желание действовать, жить</li>
+                </ul>
+            </div>
+            <p class="areas-of-my-work__phrase-bottom">
+                “Если мои компетенции не подойдут вашему запросу — 
+                помогу подобрать подходящего специалиста”
+            </p>
+        </section>
+
+        <section class="bases-of-work container">
+            <h2 class="_anim-items">Основы работы</h2>
+            <ul>
+                <li class="bases-of-work__step-1">
+                    <h3 class="_anim-items">
+                        Шаг 1: Формулирование вопроса
+                    </h3>
+                    <p>
+                        Первой фразой в нашем сотрудничестве является серия встреч, 
+                        на которой мы знакомимся, выясняем ваш запрос и четко 
+                        формулируем проблему. Важно создать основу для дальнейшей 
+                        работы, включая установление целей и условий сотрудничества
+                    </p>
+                    <p>
+                        На этом этапе возможно использование психологических тестов
+                    </p>
+                    <p>
+                        Продолжительность данной фазы составляет 2-4 сессии <span class="pop-up" data-popup="Однако процесс терапии является цикличным, и возвращение к формулировке и уточнению целей будет происходить неоднократно"></span>
+                    </p>
+                </li>
+                <li class="bases-of-work__step-2">
+                    <h3 class="_anim-items">
+                        Шаг 2: Работа над достижением целей
+                    </h3>
+                    <p>
+                        Как только мы определили направление работы, начинаем 
+                        систематически двигаться к достижению поставленных целей
+                        <br>
+                        <br>
+                        В процессе консультаций применяются эффективные методы и 
+                        упражнения для достижения желаемых результатов
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="interaction-formats" class="interaction-formats container">
+            <h2 class="_anim-items">форматы взаимодействия</h2>
+            <div class="interaction-formats__for-one">
+                <h3 class="_anim-items">Индивидуальная консультация</h3>
+                <span>очно / онлайн</span>
+                <span>50 мин</span>
+                <span>90 €</span>
+                <a href="#forms">Записаться</a>
+            </div>
+            <div class="interaction-formats__for-two">
+                <h3 class="_anim-items">Консультация для пары</h3>
+                <span>очно / онлайн</span>
+                <span>80 мин</span>
+                <span>120 €</span>
+                <a href="#forms">Записаться</a>
+            </div>
+        </section>
+
+        <section class="important-details container">
+            <h2 class="_anim-items">важные детали</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <hr>
+                    <div class="accordion-header">
+                        <h4 class="accordion-title _anim-items">Длительность встреч</h4>
+                        <img class="accordion-toggle" src="./assets/img/cross.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-content-inner">
+                            Длительность индивидуальной консультации - 45/50 мин - обусловлена особенностями человеческой психики. В случае
+                            встречи с парой встреча требует большей продолжительности и длится 80 мин
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <hr class="hr-1__hidden">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title _anim-items">Методы и подходы</h4>
+                        <img class="accordion-toggle" src="./assets/img/cross.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-content-inner">
+                            Я работаю через активное слушание и через метод майевтики. В моей работе я использую диагностические методы, такие
+                            как структурированные опросники, проективные методики, клиническое наблюдение. В рамках сессии и в качестве
+                            домашнего задания я применяю когнитивно-поведенческие упражнения и техники для практического применения
+                            полученных знаний
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <hr class="hr-2__hidden">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title _anim-items">Цель работы</h4>
+                        <img class="accordion-toggle" src="./assets/img/cross.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-content-inner">
+                            Главной целью моей работы является глубинное изменение жестких и дисфункциональных схем поведения (и мышления)
+                            человека. Иногда для этого достаточно приобретения определенных навыков (эффективной коммуникации, адекватной
+                            самооценки, уверенности в себе и тп), а иногда необходимо знать историю жизни, которая повлияла на человека
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <hr class="hr-3__hidden">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title _anim-items">Стоимость работы</h4>
+                        <img class="accordion-toggle" src="./assets/img/cross.png" alt="">
+                    </div>
+                    <div class="accordion-content">
+                        <p class="accordion-content-inner">
+                            Фактуры психолога являются медицинскими расходами
+                            Экономическое бремя, которое влечет за собой психологический путь, должно быть тяжелым, но выносимым. Решение
+                            пойти по психологическому пути может представлять собой трудный выбор как с эмоциональной, так и с экономической
+                            точки зрения. Стоимость консультаций обсуждается лично при первой встрече, чтобы адаптировать ее под вашу ситуацию
+                            и потребности
+                        </p>
+                    </div>
+                </div>
+                <div class="end_block" id="end_block">
+                    <hr class="hr-4__hidden">
+                </div>
+            </div>
+        </section>
+
+        <section class="quote container container-not-padding-x">
+            <p class="quote__words">
+                Истории успеха и отзывы могут создать
+                ожидания, а ожидания могут затруднить
+                процесс психологической помощи
+            </p>
+            <div class="quote__imgs">
+                <img src="./assets/img/sprout.png" alt="">
+                <img src="./assets/img/feather.png" alt="">           
+                <p>
+                    Я за честное взаимодействие,<br>
+                    и все добровольно<br>
+                    оставленные отзывы Вы<br>
+                    можете увидеть<br>в
+                    <a href="https://g.co/kgs/ZpACx8j" target="_blank">Google Business</a>
+                </p>
+                <img src="./assets/img/sky.png" alt="">
+            </div>
+        </section>
+
+        <section id="forms" class="form-callback container">
+            <h2 class="_anim-items">Запишитесь на консультацию</h2>
+            <p class="form-callback__petition">
+                Оставьте свои данные, и я свяжусь
+                с Вами в ближайшее время
+                для обсуждения запроса
+            </p>
+
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Ваше имя и фамилия">
+                <input type="email" name="mail" id="mail" placeholder="Ваш email">
+                <input type="tel" name="tel" id="tel" placeholder="+39 (999) 9999-999">
+                <input type="text" name="text" id="text" placeholder="Кратко опишите свой запрос (необязательно)">
+                <button type="submit">Оставить заявку</button>
+                <p class="form-callback__politics">Нажимая кнопку, Вы соглашаетесь с нашей <a href="./confidentiality_ru.html" target="_blank">Политикой конфиденциальности</a></p> 
+            </form>
+        </section>
+    </main>
+    <footer id="contacts" class="footer container container-not-padding-x">
+        <div class="footer__title">
+            <h2 class="footer__h2">ПСИХОЛОГ В РИМЕ</h2>
+            <h3 class="footer__h3">Елена Немилова</h3>
+            <span>Эксперт когнитивных процессов</span>
+            <span>Сексолог<span class="pop-up" data-popup="Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025"></span></span>
+        </div>
+        <div class="footer__messangers">
+            <a href="https://t.me/psicologia_ru" class="footer__telegram" target="_blank">telegram </a>
+            <a href="https://www.facebook.com/elenemi" class="footer__facebook" target="_blank">facebook</a>
+            <a href="https://it.linkedin.com/in/elena-nemilova-91399b25" class="footer__linked-in" target="_blank">linked in</a>
+        </div>
+        <div class="footer__address">
+            <a href="tel:+">+39 351 951 1810</a>
+            <a href="mailto:elena.nemilova@gmail.com">elena.nemilova@gmail.com</a>
+            <a href="#">Via Mondragone, 12 Roma</a>
+        </div>
+        <div class="footer__politics">
+            <a href="./confidentiality_ru.html" target="_blank">Политика конфиденциальности</a>
+            <a href="#">Разработка сайта @elena_lotorevich</a>
+        </div>
+    </footer>
+</body>
+</html>

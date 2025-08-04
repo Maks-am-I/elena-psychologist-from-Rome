@@ -1,0 +1,151 @@
+@use './../helpers/' as *;
+
+.bases-of-work {
+    padding-bottom: rem(69);
+    padding-top: rem(22);
+
+    & h2 {
+        margin-bottom: rem(62);
+    }
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+        z-index: 2;
+
+        & h3 {
+            margin-bottom: rem(10);
+            font-family: var(--font-family-base);
+            font-weight: 500;
+        }
+    }
+
+    &__step-1,
+    &__step-2 {
+        position: relative;
+
+        & p {
+            font-size: rem(14);
+            line-height: normal;
+        }
+
+        &::after {
+            position: absolute;
+            right: -3%;
+            font-family: var(--font-family-accent);
+            font-size: rem(200);
+            color: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    &__step-1::after {
+        content: '01';
+        top: -69%;
+    }
+
+    &__step-2::after {
+        content: '02';
+        top: -31%;
+    }
+
+    &__step-1 {
+        & p:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+
+        & .pop-up {
+            display: inline-block;
+            right: 2%;
+
+            &::after {
+                left: -13vw;
+                transform: translateX(50%);
+
+                @media (width: 418px) {
+                    left: 0vw;
+                }
+            }
+
+            &-italian::after {
+                transform: none;
+                left: -100px;
+            }
+        }
+    }
+
+    &__step-2 {
+        padding-top: rem(78);
+    }
+}
+
+@media (min-width: 419px) {
+    .bases-of-work {
+        &__step-1 {
+            & .pop-up::after {
+                transform: none;
+                left: rem(-130);
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .bases-of-work {
+        padding-left: rem(20);
+        padding-bottom: rem(75);
+
+        & ul {
+            & h3 {
+                margin-bottom: rem(21);
+            }
+        }
+
+        &__step-1,
+        &__step-2 {
+            & h3 {
+                font-size: rem(24);
+                margin-bottom: rem(21);
+            }
+
+            & p {
+                font-size: rem(20);
+            }
+        }
+
+        &__step-1 {
+            margin-top: rem(200);
+            margin-left: rem(99);
+            padding-right: rem(71);
+
+            & p:not(:last-child) {
+                margin-bottom: rem(16);
+            }
+
+            &::after {
+                top: -136%;
+                left: -12%;
+                font-size: rem(400);
+            }
+
+            & .pop-up {
+                right: 1%;
+                top: 1%;
+            }
+        }
+
+        &__step-2 {
+            padding-top: rem(197);
+            padding-left: rem(259);
+
+            & h3 {
+                margin-bottom: rem(15);
+            }
+
+            &::after {
+                top: -28%;
+                left: 11%;
+                font-size: rem(400);
+            }
+        }
+    }
+}

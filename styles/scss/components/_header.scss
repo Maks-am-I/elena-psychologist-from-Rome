@@ -1,0 +1,112 @@
+@use './../helpers/' as *;
+
+.header {
+    background-color: rgb(243, 243, 243);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-block: rem(13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        height: rem(77);
+        width: rem(79);
+    }
+
+    &__language {
+        font-size: rem(16);
+        margin-left: auto;
+        
+        & a {
+            color: var(--color-black);
+            text-decoration: none;
+        }
+
+        @media (min-width: 960px) {
+            order: 4;
+            width: 100%;
+            max-width: rem(64);
+        }
+    }
+    
+    &__button-burger {
+        border: none;
+        background-color: rgba(243, 243, 243, 0.5);
+        display: flex;
+        flex-direction: column;
+        gap: rem(5);
+        padding: 0;
+        margin-left: rem(40);
+
+        & span {
+            height: rem(1.5);
+            width: rem(38);
+            background-color: var(--color-black);
+            transition-duration: 0.2s;
+        }
+
+        &.is-cross {
+            & span:nth-child(1) {
+                transform: rotate(45deg) translateX(14%);
+                transition-duration: 0.2s;
+            }
+
+            & span:nth-child(2) {
+                display: none;
+                transition-duration: 0.2s;
+            }
+
+            & span:nth-child(3) {
+                transform: rotate(-45deg) translateX(10%);
+                transition-duration: 0.2s;
+            }
+        }
+
+        @media (min-width: 960px) {
+            display: none;
+        }
+    }
+
+    &__nav-menu {
+        @include tablet-above {
+            &.active {
+                transform: translateX(40vw);
+                transition-duration: 0.2s;
+            }
+        }
+
+        @include fluid-text(16, 14);
+
+        display: flex;
+        flex-direction: column;
+        transform: translateX(1000vw);
+        transition-duration: 0.2s;
+        
+        position: fixed;
+        z-index: 11;
+        top: rem(103);
+        width: 70%;
+        padding-left: rem(20);
+        padding-block: rem(15);
+        gap: rem(20);
+        font-size: rem(14);
+        font-weight: 300;
+        background-color: var(--color-background);
+
+        & a {
+            text-decoration: none;
+            color: var(--color-black);
+        }
+
+        @media (min-width: 960px) {
+            flex-direction: row;
+            transform: translateX(0);
+            width: 100%;
+            position: static;
+            order: 2;
+            justify-content: center;
+        }
+    }
+}

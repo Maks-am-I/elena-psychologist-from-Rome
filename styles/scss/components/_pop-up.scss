@@ -1,0 +1,45 @@
+@use './../helpers/' as *;
+
+.pop-up {
+    z-index: 5;
+    display: inline-block;
+    position: relative;
+    height: rem(13);
+    width: rem(13);
+    margin-left: rem(6);
+    margin-top: rem(-13);
+    background-image: url('./../../../assets/icons/info.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: attr(data-popup);
+        font-family: var(--font-family-base);
+        font-size: rem(14);
+        font-weight: 400;
+        text-transform: none;
+        color: var(--color-black);
+        visibility: hidden;
+        opacity: 0;
+        bottom: 100%;
+        left: -30vw;
+        width: fit-content;
+        height: fit-content;
+        border-radius: var(--border-radius);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: var(--color-background);
+        display: flex;
+        align-items: center;
+        padding-inline: rem(20);
+        padding-block: rem(5);
+        transition-duration: .2s;
+    }
+
+    &:hover::after {
+            visibility: visible;
+            opacity: 1;
+            transition-duration: .2s;
+    }
+}

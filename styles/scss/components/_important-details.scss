@@ -1,0 +1,95 @@
+@use './../helpers/' as *;
+
+.important-details {
+    padding-top: rem(90);
+
+    & h2 {
+        margin-bottom: rem(36);
+    }
+}
+
+.accordion {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+.accordion-item {
+    background-color: #f3f3f3;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.accordion-title {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.accordion-header:hover {
+    background-color: #eee;
+}
+
+.accordion-toggle {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.accordion-toggle::before,
+.accordion-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    background-color: #333;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-in-out;
+    background-color: white;
+}
+
+.accordion-content-inner {
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    background-color: #f3f3f3;
+}
+
+/* Анимация открытия/закрытия */
+.accordion-item.active .accordion-content {
+    max-height: 500px; /* Должно быть больше максимальной высоты контента */
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-item.active .accordion-toggle {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+@media (min-width: 960px) {
+    .important-details {
+        padding-top: rem(97);
+        padding-left: rem(20);
+    }
+}

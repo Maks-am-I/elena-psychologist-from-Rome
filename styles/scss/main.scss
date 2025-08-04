@@ -1,0 +1,22 @@
+@use 'normalize';
+@use 'fonts';
+@use 'globals';
+@use 'utils';
+@use 'variables';
+
+@use 'components/header';
+@use 'components/main';
+@use 'components/intro';
+@use 'components/about-me';
+@use 'components/pop-up';
+@use 'components/education';
+@use 'components/areas-of-my-work';
+@use 'components/bases-of-work';
+@use 'components/interaction-formats';
+@use 'components/important-details';
+@use 'components/quote';
+@use 'components/form-callback';
+@use 'components/footer';
+@use 'components/button-up';
+
+@use 'components/download/main-downloads';

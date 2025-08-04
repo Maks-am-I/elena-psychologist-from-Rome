@@ -1,0 +1,17 @@
+@use 'helpers' as *;
+
+:root {
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-accent: 'Lato', sans-serif;
+
+    --color-background: #f3f3f3;
+    --color-black: #000000;
+    --color-ligth: #ffffff;
+    --color-font-accent: #2F2A27;
+    --color-font-accent-2: #535456;
+
+    --border-radius: 4px;
+
+    --container-width: #{rem(370)};
+    --container-padding-x: #{rem(10)};
+}

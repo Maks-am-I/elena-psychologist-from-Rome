@@ -1,0 +1,155 @@
+@use './../helpers/' as *;
+
+.footer {
+    padding-top: rem(33);
+    padding-bottom: rem(9);
+    padding-inline: rem(10);
+    background-image: url('./../../../assets/img/background-footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-font-accent-2);
+    border-top: 1.5px solid #7b7b7b;
+
+    & a {
+        color: var(--color-font-accent-2);
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            font-size: rem(14);
+            margin-bottom: rem(17);
+        }
+
+        & h3 {
+            font-size: rem(30);
+            font-weight: 400;
+        }
+
+        & span { 
+            font-size: rem(14);
+            font-weight: 300;
+        }
+
+        & .pop-up {
+            margin: 0;
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
+
+    &__messangers {
+        display: flex;
+        flex-direction: column;
+        gap: rem(2);
+        padding-top: rem(12);
+        padding-right: rem(32);
+        font-size: rem(24);
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 0 auto;
+
+        & a {
+            position: relative;
+            text-decoration: none;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 122%;
+                height: 1.5px;
+                bottom: 6px;
+                background-color: #7b7b7b;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: rem(17);
+                height: rem(17);
+                top: 10px;
+                right: -28px;
+                background-image: url('./../../../assets/icons/arrow-messangers.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: rem(5);
+        font-size: rem(16);
+        font-weight: 400;
+        text-align: left;
+        padding-top: rem(25);
+        margin-bottom: rem(53);
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &__politics {
+        font-size: rem(10);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 960px) {
+    .footer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-left: rem(20);
+        padding-top: rem(72);
+        height: rem(362);
+
+        &__title {
+            & h2 {
+                font-size: rem(16);
+
+                &::after {
+                    width: rem(60);
+                    bottom: rem(-5);
+                }
+            }
+            
+            & h3 {
+                font-size: rem(28);
+            }
+
+            & span:last-child {
+                &.pop-up::after {
+                    left: 0;
+                    min-height: rem(88);
+                    min-width: rem(323);
+                }
+            }
+        }
+
+        &__messangers {
+            padding-top: 0;
+        }
+
+        &__address {
+            font-size: rem(24);
+            text-align: right;
+            padding-top: 0;
+        }
+
+        &__politics {
+            width: 96%;
+            justify-content: space-between;
+            position: absolute;
+            bottom: rem(66);
+        }
+    }
+}
